@@ -108,7 +108,6 @@ K_F9 = pygame.K_F9
 K_F10 = pygame.K_F10
 K_F11 = pygame.K_F11
 K_F12 = pygame.K_F12
-K_FUNCTION = pygame.K_FUNCTION
 K_PSR = pygame.K_PRINTSCREEN
 K_SCROLL = pygame.K_SCROLLOCK
 K_INSERT = pygame.K_INSERT
