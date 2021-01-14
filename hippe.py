@@ -96,6 +96,28 @@ K_7 = pygame.K_7
 K_8 = pygame.K_8
 K_9 = pygame.K_9
 K_0 = pygame.K_0
+K_F1 = pygame.K_F1
+K_F2 = pygame.K_F2
+K_F3 = pygame.K_F2
+K_F4 = pygame.K_F4
+K_F5 = pygame.K_F5
+K_F6 = pygame.K_F6
+K_F7 = pygame.K_F7
+K_F8 = pygame.K_F8
+K_F9 = pygame.K_F9
+K_F10 = pygame.K_F10
+K_F11 = pygame.K_F11
+K_F12 = pygame.K_F12
+K_FUNCTION = pygame.K_FUNCTION
+K_PSR = pygame.K_PRINTSCREEN
+K_SCROLL = pygame.K_SCROLLOCK
+K_INSERT = pygame.K_INSERT
+K_HOME = pygame.K_HOME
+K_PAGEUP = pygame.K_PAGEUP
+K_PAGEDOWN = pygame.K_PAGEDOWN
+K_DELETE = pygame.K_DELETE
+K_END = pygame.K_END
+K_NUM = pygame.K_NUMLOCK
 
 def HideDebbuger():
     win32gui.ShowWindow(win32gui.GetForegroundWindow() , win32con.SW_HIDE)
