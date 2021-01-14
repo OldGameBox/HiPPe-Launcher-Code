@@ -66,7 +66,7 @@ while hp.Drawing():
         try:
             if not os.path.isfile(os.path.join(path, "app.py")):
                 file = open(os.path.join(path, "app.py"),"w")
-                file.write('import hippe\n\n__name__ = "App"\n__version__ = "1.0"\n__author__ = "name"\n\n#hp.HideDebbuger()\nhp.init(500,500,__name__,True)    #open window\n\n#vars\n\nwhile hp.Drawing():\n    hp.FPSLimit(60)\n    hp.OnExit()\n\n    #render code\n\n    hp.Render()\nhp.Exit()')
+                file.write('import hippe as hp\n\n__name__ = "App"\n__version__ = "1.0"\n__author__ = "name"\n\n#hp.HideDebbuger()\nhp.init(500,500,__name__,True)    #open window\n\n#vars\n\nwhile hp.Drawing():\n    hp.FPSLimit(60)\n    hp.OnExit()\n\n    #render code\n\n    hp.Render()\nhp.Exit()')
                 file.close()
             if status == "Installed":
                 os.remove(os.path.join(path, "hippe.py"))
