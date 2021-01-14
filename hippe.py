@@ -213,8 +213,8 @@ def Clear():
 def Fill(color):
     screen.fill(color)
 
-def Line(color,Vector,width):
-    pygame.draw.line(screen,color,Vector.x,Vector.y,width)
+def Line(color,Vector_start,Vector_end,width):
+    pygame.draw.line(screen,color,(Vector_start.x,Vector_start.y),(Vector_end.x,Vector_end.y),width)
 
 def Render():
     pygame.display.flip()
@@ -237,8 +237,8 @@ def DrawSprite(Sprite):
     image_rect = image.get_rect(center = image.get_rect(center=(Sprite.position.x,Sprite.position.y)).center)
     screen.blit(image,image_rect)
 
-def DrawRect(left,top,width,height,color):
-    pygame.draw.rect(screen, color, pygame.Rect(left,top,width,height))
+def DrawRect(Vector,width,height,color):
+    pygame.draw.rect(screen, color, pygame.Rect(Vector.x,Vector.y,width,height))
 
 def CollideWith(object,list):
     res=[]
